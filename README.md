@@ -2,6 +2,8 @@
 
 A WooCommerce Product Editor Block inspired by [Create Product Editor Block](https://github.com/woocommerce/woocommerce/blob/trunk/packages/js/create-product-editor-block/README.md).
 
+Adds two blocks, Minimum Quantity and Maximum Quantity, to the Basic Details section of the Product Editor.
+
 ## Getting Started
 
 ### Prerequisites
