@@ -16,6 +16,7 @@
 
 use Automattic\WooCommerce\Admin\BlockTemplates\BlockTemplateInterface;
 use Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\ProductFormTemplateInterface;
+use Automattic\WooCommerce\Admin\Features\ProductBlockEditor\BlockRegistry;
 
 /**
  * Registers the block using the metadata loaded from the `block.json` file.
@@ -26,8 +27,8 @@ use Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\Pr
  */
 function my_extension_name_my_extension_name_block_init() {
 	if ( isset( $_GET['page'] ) && $_GET['page'] === 'wc-admin' ) {
-		register_block_type( __DIR__ . '/build/min-quantity' );
-		register_block_type( __DIR__ . '/build/max-quantity' );
+		BlockRegistry::get_instance()->register_block_type_from_metadata( __DIR__ . '/build/min-quantity' );
+		BlockRegistry::get_instance()->register_block_type_from_metadata( __DIR__ . '/build/max-quantity' );
 	}
 }
 add_action( 'init', 'my_extension_name_my_extension_name_block_init' );
