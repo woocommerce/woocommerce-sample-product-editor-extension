@@ -1,0 +1,34 @@
+{
+	"name": "my-extension-name",
+	"version": "0.1.0",
+	"description": "A block to demonstrate extending the Product Editor",
+	"author": "The WordPress Contributors",
+	"license": "GPL-3.0+",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start",
+		"env": "wp-env",
+		"postinstall": "composer install"
+	},
+	"devDependencies": {
+		"@types/wordpress__block-editor": "^7.0.0",
+		"@types/wordpress__blocks": "^11.0.9",
+		"@woocommerce/dependency-extraction-webpack-plugin": "^2.3.0",
+		"@woocommerce/eslint-plugin": "^2.2.0",
+		"@woocommerce/product-editor": "^1.1.0",
+		"@wordpress/env": "^8.13.0",
+		"@wordpress/prettier-config": "^3.4.0",
+		"@wordpress/scripts": "^26.18.0",
+		"@wordpress/stylelint-config": "^21.30.0",
+		"eslint-import-resolver-typescript": "^3.6.1"
+	},
+	"dependencies": {
+		"prettier": "^3.1.0"
+	}
+}
