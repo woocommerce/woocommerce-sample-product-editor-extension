@@ -1,9 +1,9 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "extension/my-extension-name",
+	"name": "extension/min-quantity-block",
 	"version": "0.1.0",
-	"title": "My Extension Name",
+	"title": "Min Quantity",
 	"category": "widgets",
 	"icon": "flag",
 	"description": "A block to demonstrate extending the Product Editor",

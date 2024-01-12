@@ -40,19 +40,16 @@ function my_extension_name_my_extension_name_add_block_to_product_editor( BlockT
 		if ( $basic_details ) {
 			$basic_details->add_block(
 				[
-					'id' 	     => 'extension-my-extension-name',
+					'id' 	     => 'extension-min-quantity',
 					'order'	     => 40,
-					'blockName'  => 'extension/my-extension-name',
-					'attributes' => [
-						'message' => 'My Extension Name',
-					]
+					'blockName'  => 'extension/min-quantity-block',
 				]
 			);
 			$basic_details->add_block(
 				[
 					'id' 	     => 'extension-max-quantity',
 					'order'	     => 50,
-					'blockName'  => 'extension/max-quantity',
+					'blockName'  => 'extension/max-quantity-block',
 				]
 			);
 		}
